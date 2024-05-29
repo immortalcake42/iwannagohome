@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 자기소개서</title>
+    <style>
+        body {
+            font-family: 'Noto Sans Korean', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fbfbc0; /* 아이보리색 배경 */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #fff; /* 헤더 바닥 경계선 추가 */
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #fff; /* 네비게이션 바닥 경계선 추가 */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        section {
+            display: none; /* 모든 섹션을 숨깁니다 */
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #fff; /* 푸터 윗부분 경계선 추가 */
+        }
+        h2 {
+            color: #000000; /* 헤더와 섹션 제목의 글자색 변경 */
+        }
+        h1 {
+            color:#fff;
+        }
+        p {
+            color: #333; /* 섹션 내용의 글자색 변경 */
+            margin-bottom: 10px; /* 문단 사이의 간격 추가 */
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            color: #fffcfc;
+            cursor: pointer;
+            font-size: 16px; /* 버튼 글꼴 크기 조정 */
+        }
+        button:hover {
+            color: #ccc; /* 버튼 호버 시 색상 변경 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>나의 자기소개서</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><button onclick="toggleSection('section1')">개요</button></li>
+            <li><button onclick="toggleSection('section2')">경력</button></li>
+            <li><button onclick="toggleSection('section3')">보유 기술</button></li>
+            <li><button onclick="toggleSection('section4')">연락처</button></li>
+        </ul>
+    </nav>
+    <section id="section1">
+        <h2>개요</h2>
+        <img src="2.jpg" alt="개요 이미지" style="max-width: 100%;">
+        <p>집에 가서 밥을 먹고 싶어요.</p>
+    </section>
+    <section id="section2">
+        <h2>경력</h2>
+        <p>고촌 고등학교 1학년 재학 중입니다.</p>
+    </section>
+    <section id="section3">
+        <h2>보유 기술</h2>
+        <img src="1.gif" alt="보유 기술 이미지" style="max-width: 100%;">
+        <p>코딩 자격증 다수를 보유하고 있으며, PPT, 포토샵, 엑셀 자격증도 보유하고 있습니다. 경기도 영재원을 졸업했습니다.</p>
+    </section>
+    <section id="section4">
+        <h2>연락처</h2>
+        <p>010-4963-6556</p>
+        <p>24-10905@gochon.hs.kr</p>
+    </section>
+    <footer>
+        <img src="3.jpg" alt="하단 이미지" style="max-width: 100%;">
+        <p>나의 자기소개서 &copy; 2024</p>
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
